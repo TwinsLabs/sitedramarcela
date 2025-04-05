@@ -4,7 +4,6 @@ import React from 'react';
 import { useContent } from '@/lib/contentContext';
 import Hero from '@/components/sections/Hero';
 import ServicesGrid from '@/components/sections/ServicesGrid';
-import PanelCTA from '@/components/sections/PanelCTA';
 import BioSection from '@/components/sections/BioSection';
 import ContactSection from '@/components/sections/ContactSection';
 import LandingProductPanel from '@/components/sections/LandingProductPanel';
@@ -48,8 +47,6 @@ export default function Home() {
       />
 
       <LandingProductPanel className="mt-16" />
-
-      <PanelCTA page="home" />
 
       <ContactSection
         title="Entre em Contato"
