@@ -7,6 +7,7 @@ import ServicesGrid from '@/components/sections/ServicesGrid';
 import PanelCTA from '@/components/sections/PanelCTA';
 import BioSection from '@/components/sections/BioSection';
 import ContactSection from '@/components/sections/ContactSection';
+import LandingProductPanel from '@/components/sections/LandingProductPanel';
 
 export default function Home() {
   const { pageContent, isLoading } = useContent();
@@ -45,6 +46,8 @@ export default function Home() {
         buttonText="Conheça mais sobre mim"
         buttonLink="/sobre"
       />
+
+      <LandingProductPanel className="mt-16" />
 
       <PanelCTA page="home" />
 
