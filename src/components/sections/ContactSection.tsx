@@ -8,6 +8,8 @@ import {
   FaLinkedin,
   FaQuoteRight,
   FaStar,
+  FaUniversity,
+  FaBuilding,
 } from 'react-icons/fa';
 import ContactForm from '../ui/ContactForm';
 
@@ -164,16 +166,18 @@ const ContactSection = ({
                 <span className="h-px w-16 bg-[#E5DDD4]"></span>
               </div>
               <div className="flex flex-wrap justify-center gap-6">
-                <img
-                  src="/images/logo-crm.png"
-                  alt="CRM"
-                  className="h-12 opacity-70 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300"
-                />
-                <img
-                  src="/images/logo-anamt.png"
-                  alt="ANAMT"
-                  className="h-12 opacity-70 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300"
-                />
+                <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm border border-[#E5DDD4] hover:shadow-md transition-all duration-300 group">
+                  <FaUniversity className="h-12 w-12 text-gray-400 group-hover:text-[#A5776C] transition-all duration-300" />
+                  <span className="mt-2 text-xs text-[#5C6857] font-medium">
+                    Conselho Regional de Medicina
+                  </span>
+                </div>
+                <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm border border-[#E5DDD4] hover:shadow-md transition-all duration-300 group">
+                  <FaBuilding className="h-12 w-12 text-gray-400 group-hover:text-[#A5776C] transition-all duration-300" />
+                  <span className="mt-2 text-xs text-[#5C6857] font-medium">
+                    ANAMT
+                  </span>
+                </div>
               </div>
             </div>
           </div>
