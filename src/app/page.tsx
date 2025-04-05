@@ -37,7 +37,7 @@ export default function Home() {
       <BioSection
         title="Sobre Dra. Marcella Vieira"
         content={bioContent.substring(0, 300) + '...'}
-        imageSrc="/images/dramarcela.png"
+        imageSrc="/images/medica1.png"
         imageAlt="Dra. Marcella Vieira"
         showButton={true}
         buttonText="Conheça mais sobre mim"

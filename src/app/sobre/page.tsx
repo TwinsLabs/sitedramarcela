@@ -69,7 +69,7 @@ export default function Sobre() {
       <BioSection
         title={bioTitle}
         content={bioContent}
-        imageSrc="/images/dramarcela.png"
+        imageSrc="/images/medica1.png"
         imageAlt="Dra. Marcella Vieira"
       />
 
