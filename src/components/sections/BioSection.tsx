@@ -52,7 +52,10 @@ const BioSection = ({
   }, []);
 
   return (
-    <section className="section-padding bg-white relative overflow-hidden">
+    <section
+      className="section-padding bg-white relative overflow-hidden"
+      style={{ paddingBottom: '0px' }}
+    >
       {/* Formas decorativas */}
       <div className="absolute top-[-100px] right-[-100px] w-[300px] h-[300px] bg-[#87CEEB] rounded-full opacity-10" />
       <div className="absolute bottom-[-50px] left-[-50px] w-[200px] h-[200px] bg-[#4682B4] rounded-full opacity-10" />
