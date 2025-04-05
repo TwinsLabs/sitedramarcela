@@ -4,6 +4,12 @@ import React, { useEffect, useRef } from 'react';
 import { useContent } from '@/lib/contentContext';
 import Image from 'next/image';
 import Link from 'next/link';
+import {
+  FaUserMd,
+  FaShieldAlt,
+  FaFileAlt,
+  FaLongArrowAltRight,
+} from 'react-icons/fa';
 
 interface HeroProps {
   page: string;
@@ -11,7 +17,7 @@ interface HeroProps {
 
 const Hero = ({ page }: HeroProps) => {
   const { pageContent, isLoading } = useContent();
-  const circleRef = useRef<HTMLDivElement>(null);
+  const imageRef = useRef<HTMLDivElement>(null);
 
   // Animação suave ao carregar a página
   useEffect(() => {
@@ -43,7 +49,9 @@ const Hero = ({ page }: HeroProps) => {
 
   if (isLoading) {
     return (
-      <div className="bg-[#E5DDD4] py-16 md:py-24">Carregando...</div>
+      <div className="hero-gradient-bg py-16 md:py-24">
+        Carregando...
+      </div>
     );
   }
 
@@ -54,55 +62,132 @@ const Hero = ({ page }: HeroProps) => {
     'Médica do Trabalho especializada em perícias médicas e consultoria em saúde ocupacional.';
 
   return (
-    <section className="bg-[#E5DDD4] py-16 md:py-24 relative overflow-hidden">
-      {/* Formas decorativas */}
-      <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-[#E5DDD4] rounded-full opacity-40" />
-      <div className="absolute bottom-[-150px] left-[-150px] w-[300px] h-[300px] bg-[#5C6857] rounded-full opacity-10" />
+    <section className="hero-gradient-bg py-16 md:py-28 relative overflow-hidden subtle-pattern">
+      {/* Elementos decorativos em camadas */}
+      <div className="absolute top-0 left-0 w-full h-full bg-[#5C6857] opacity-[0.02] z-0"></div>
+      <div className="absolute top-0 left-0 w-[40%] h-full bg-gradient-to-r from-[#5C6857] to-transparent opacity-[0.03] z-0"></div>
+
+      {/* Formas geométricas decorativas */}
+      <div className="absolute top-[-80px] right-[20%] w-[200px] h-[200px] rounded-full border-4 border-[#5C6857] border-opacity-5 animate-subtle-rotate"></div>
+      <div className="absolute bottom-[-150px] left-[-150px] w-[350px] h-[350px] bg-[#5C6857] rounded-full opacity-[0.07]"></div>
+      <div className="absolute top-[30%] right-[10%] w-[15px] h-[15px] bg-[#5C6857] rounded-full opacity-20 animate-float"></div>
+      <div className="absolute bottom-[20%] left-[15%] w-[10px] h-[10px] bg-[#A5776C] rounded-full opacity-30 animate-float-reverse"></div>
 
       <div className="container-custom relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="order-2 md:order-1 animate-on-scroll opacity-0 translate-y-4 transition duration-1000 ease-out">
-            <p className="text-[#5C6857] font-medium mb-2 tracking-wider uppercase text-sm">
-              SEJA BEM-VINDO
+            {/* Badge de credenciais */}
+            <div
+              className="mb-6 animate-fade-in-right"
+              style={{ animationDelay: '0.3s' }}
+            >
+              <span className="credentials-badge mr-2">
+                <FaUserMd className="mr-1" /> CRM 80479
+              </span>
+              <span className="credentials-badge">
+                <FaShieldAlt className="mr-1" /> RQE: 61114
+              </span>
+            </div>
+
+            {/* Texto de boas-vindas mais específico */}
+            <p
+              className="text-[#5C6857] font-medium mb-2 tracking-wider uppercase text-sm animate-fade-in"
+              style={{ animationDelay: '0.5s' }}
+            >
+              EXCELÊNCIA EM SAÚDE OCUPACIONAL
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-[#394240] mb-4">
+
+            {/* Título com tipografia destacada */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-[#394240] mb-4 leading-tight">
               {title}
             </h1>
-            <p className="text-lg md:text-xl text-[#5C6857] mb-8">
+
+            {/* Subtítulo com fonte diferente e maior destaque */}
+            <p className="text-lg md:text-xl text-[#5C6857] mb-8 font-light leading-relaxed max-w-lg">
               {subtitle}
             </p>
-            <Link
-              href="/contato"
-              className="btn-cta inline-block hover:scale-105 transition-transform animate-fade-in-up"
-              style={{
-                animation: 'fadeInUp 1.2s ease-out forwards',
-                opacity: 0,
-                transform: 'translateY(20px)',
-              }}
-            >
-              Solicitar Orçamento
-            </Link>
-          </div>
-          <div className="order-1 md:order-2 flex justify-center relative animate-on-scroll opacity-0 translate-y-4 transition duration-1000 delay-300 ease-out">
-            {/* Círculo decorativo azul claro */}
+
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-8">
+              <Link
+                href="/contato"
+                className="btn-cta-premium btn-shine inline-flex items-center hover:scale-105 transition-transform animate-fade-in-up shadow-lg"
+                style={{
+                  animation: 'fadeInUp 1.2s ease-out forwards',
+                  opacity: 0,
+                  transform: 'translateY(20px)',
+                }}
+              >
+                Solicitar Orçamento
+                <FaLongArrowAltRight className="ml-2" />
+              </Link>
+
+              {/* Texto adicional abaixo do botão */}
+              <p className="text-sm text-[#5C6857] italic opacity-80">
+                Atendimento personalizado para sua empresa
+              </p>
+            </div>
+
+            {/* Miniícones representando as áreas de atuação */}
             <div
-              className="absolute w-[400px] h-[400px] rounded-full bg-[#87CEEB] opacity-20 z-0 right-[-50px] animate-pulse-slow"
-              ref={circleRef}
-            />
+              className="flex gap-5 mt-8 animate-fade-in-up"
+              style={{ animationDelay: '1s' }}
+            >
+              <div className="flex flex-col items-center">
+                <div className="w-12 h-12 rounded-full bg-[#E5DDD4] flex items-center justify-center mb-2 shadow-sm">
+                  <FaUserMd className="text-[#5C6857] text-xl" />
+                </div>
+                <span className="text-xs text-[#394240]">
+                  Atendimento
+                  <br />
+                  Especializado
+                </span>
+              </div>
+
+              <div className="flex flex-col items-center">
+                <div className="w-12 h-12 rounded-full bg-[#E5DDD4] flex items-center justify-center mb-2 shadow-sm">
+                  <FaShieldAlt className="text-[#5C6857] text-xl" />
+                </div>
+                <span className="text-xs text-[#394240]">
+                  Segurança
+                  <br />
+                  Ocupacional
+                </span>
+              </div>
+
+              <div className="flex flex-col items-center">
+                <div className="w-12 h-12 rounded-full bg-[#E5DDD4] flex items-center justify-center mb-2 shadow-sm">
+                  <FaFileAlt className="text-[#5C6857] text-xl" />
+                </div>
+                <span className="text-xs text-[#394240]">
+                  Laudos
+                  <br />
+                  Especializados
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            className="order-1 md:order-2 flex justify-center relative animate-on-scroll opacity-0 translate-y-4 transition duration-1000 delay-300 ease-out"
+            ref={imageRef}
+          >
+            {/* Círculo decorativo azul claro */}
+            <div className="absolute w-[400px] h-[400px] rounded-full bg-[#87CEEB] opacity-20 z-0 right-[-50px] animate-pulse-slow" />
 
             {/* Forma decorativa azul escuro */}
             <div className="absolute w-[200px] h-[200px] rounded-full bg-[#4682B4] opacity-20 z-0 bottom-[-30px] right-[-30px] animate-float" />
 
-            <div className="relative w-full max-w-xl h-[450px] md:h-[600px] z-10 animate-fade-in">
+            {/* Moldura para o retrato - destaque visual */}
+            <div className="portrait-frame w-full max-w-xl h-[450px] md:h-[600px] z-10 animate-fade-in">
+              {/* Luz de fundo sutil */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-[#5C6857] via-transparent to-transparent opacity-10 z-0"></div>
+
               <Image
                 src="/images/dramarcela.png"
                 alt={title}
                 fill
-                className="object-contain rounded-lg"
+                className="object-contain"
                 priority
                 style={{
-                  filter:
-                    'drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.1))',
                   transition: 'transform 0.5s ease-in-out',
                   animation:
                     'fadeIn 1.5s ease-out forwards, slideIn 1.5s ease-out forwards',
@@ -116,6 +201,9 @@ const Hero = ({ page }: HeroProps) => {
                   e.currentTarget.style.transform = 'scale(1)';
                 }}
               />
+
+              {/* Elemento de destaque sobre a imagem */}
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-white to-transparent h-[100px] opacity-20"></div>
             </div>
           </div>
         </div>
