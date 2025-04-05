@@ -3,12 +3,12 @@ import React from 'react';
 import AuthProvider from './providers';
 import Layout from '@/components/layout/Layout';
 import './globals.css';
-import { Inter, Playfair_Display } from 'next/font/google';
+import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
-const playfair = Playfair_Display({
+const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-playfair',
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-inter',
 });
 
 export const metadata = {
@@ -23,10 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="pt-BR"
-      className={`${inter.variable} ${playfair.variable}`}
-    >
+    <html lang="pt-BR" className={`${inter.variable}`}>
       <head>
         <meta
           name="viewport"

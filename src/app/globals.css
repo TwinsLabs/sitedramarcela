@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -29,7 +28,7 @@ body {
   h4,
   h5,
   h6 {
-    @apply font-serif;
+    @apply font-sans font-semibold;
   }
 
   p,
@@ -41,7 +40,8 @@ body {
   }
 
   .font-secondary {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-inter), sans-serif;
+    @apply font-medium;
   }
 }
 
@@ -133,7 +133,7 @@ body {
   }
 
   .subtitle-emphasis {
-    @apply font-secondary font-medium tracking-wide;
+    @apply font-medium tracking-wide;
     color: var(--color-primary);
   }
 }
