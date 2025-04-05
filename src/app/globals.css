@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #5C6857;
+  --color-primary-dark: #394240;
+  --color-primary-light: #A4ABA1;
+  --color-secondary: #A5776C;
+  --color-background: #E5DDD4;
+  --color-background-alt: #C6B4A9;
+  --color-text: #394240;
+  --color-text-light: #BBAFA5;
+}
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+@layer base {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+
+  p,
+  span,
+  div,
+  a,
+  button {
+    @apply font-sans;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#5C6857] text-white py-3 px-6 rounded-md hover:bg-opacity-90 transition-all duration-300 font-medium;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-[#5C6857] text-[#5C6857] py-3 px-6 rounded-md hover:bg-[#5C6857] hover:text-white transition-all duration-300 font-medium;
+  }
+
+  .btn-cta {
+    @apply bg-[#5C6857] text-white py-4 px-8 rounded-md hover:bg-opacity-90 transition-all duration-300 font-semibold text-lg;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300;
+  }
+}
