@@ -12,6 +12,10 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
     onSubmit(data);
   };
 
+  // Classe comum para todos os inputs para garantir consistência
+  const inputClass =
+    'w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#5C6857] box-border';
+
   return (
     <form
       onSubmit={handleSubmit}
@@ -29,7 +33,7 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
           id="name"
           name="name"
           required
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#5C6857]"
+          className={inputClass}
           placeholder="Seu nome completo"
         />
       </div>
@@ -46,7 +50,7 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
           id="email"
           name="email"
           required
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#5C6857]"
+          className={inputClass}
           placeholder="seu.email@exemplo.com"
         />
       </div>
@@ -62,7 +66,7 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
           type="tel"
           id="phone"
           name="phone"
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#5C6857]"
+          className={inputClass}
           placeholder="(00) 00000-0000"
         />
       </div>
@@ -79,7 +83,7 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
           id="subject"
           name="subject"
           required
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#5C6857]"
+          className={inputClass}
           placeholder="Assunto da mensagem"
         />
       </div>
@@ -96,8 +100,9 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
           name="message"
           rows={8}
           required
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#5C6857] resize-y min-h-[120px]"
+          className={`${inputClass} resize-y min-h-[120px] max-w-full`}
           placeholder="Digite sua mensagem aqui..."
+          style={{ width: '100%' }}
         ></textarea>
       </div>
 

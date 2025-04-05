@@ -34,8 +34,6 @@ export default function Home() {
     <>
       <Hero page="home" />
 
-      <ServicesGrid page="home" />
-
       <BioSection
         title="Sobre Dra. Marcella Vieira"
         content={bioContent.substring(0, 300) + '...'}
@@ -45,6 +43,8 @@ export default function Home() {
         buttonText="Conheça mais sobre mim"
         buttonLink="/sobre"
       />
+
+      <ServicesGrid page="home" />
 
       <LandingProductPanel className="mt-16" />
 
