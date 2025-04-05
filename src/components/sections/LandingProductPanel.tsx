@@ -48,13 +48,16 @@ const LandingProductPanel = ({
 
   return (
     <section
-      className={`section-padding bg-gradient-to-b from-white to-[#F8F6F4] relative overflow-hidden ${className}`}
+      className={`section-padding bg-gradient-to-b from-[#E8F0E8] to-[#F3F7F3] relative overflow-hidden ${className}`}
     >
       {/* Formas decorativas */}
       <div className="absolute top-[-150px] right-[-100px] w-[350px] h-[350px] bg-[#87CEEB] rounded-full opacity-10 animate-pulse-slow" />
       <div className="absolute bottom-[-80px] left-[-60px] w-[250px] h-[250px] bg-[#4682B4] rounded-full opacity-10 animate-float" />
       <div className="absolute top-[30%] left-[10%] w-[15px] h-[15px] bg-[#5C6857] rounded-full opacity-20 animate-float" />
       <div className="absolute top-[60%] right-[15%] w-[20px] h-[20px] bg-[#E5DDD4] rounded-full opacity-40 animate-float-reverse" />
+
+      {/* Borda decorativa top */}
+      <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-transparent via-[#5C6857] to-transparent opacity-20"></div>
 
       <div className="container-custom relative z-10">
         {/* Cabeçalho Principal */}
@@ -63,17 +66,17 @@ const LandingProductPanel = ({
             Painel Digital para Profissionais de Saúde
           </h2>
           <div className="h-1 w-24 bg-[#5C6857] mx-auto mb-8"></div>
-          <p className="text-xl text-[#5C6857] max-w-3xl mx-auto">
+          <p className="text-xl text-[#5C6857] max-w-3xl mx-auto font-secondary">
             <span className="font-medium">
-              A solução completa para médicos e profissionais de saúde
+              Simplifique sua gestão médica e otimize seu tempo
             </span>{' '}
-            que buscam otimizar seu tempo e garantir qualidade nos
-            atendimentos com documentos padronizados e atualizados.
+            com documentos prontos e atualizados para o exercício da
+            sua profissão.
           </p>
         </div>
 
         {/* Visão geral do produto - Imagem e texto lado a lado */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20 bg-white p-8 rounded-lg shadow-lg border border-[#E5DDD4]">
           <div className="landing-animate opacity-0 translate-y-8 transition duration-700 delay-100 ease-out">
             <div className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-xl">
               <Image
@@ -89,7 +92,7 @@ const LandingProductPanel = ({
               <div className="absolute inset-0 bg-gradient-to-t from-[rgba(57,66,64,0.2)] to-transparent"></div>
 
               {/* Emblema de destaque */}
-              <div className="absolute top-4 right-4 bg-[#5C6857] text-white px-4 py-2 rounded-full text-sm font-medium transform rotate-3 shadow-lg">
+              <div className="absolute top-4 right-4 bg-[#5C6857] text-white px-4 py-2 rounded-full text-sm font-medium transform rotate-3 shadow-lg animate-subtle-pulse">
                 Novo
               </div>
             </div>
