@@ -13,9 +13,15 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md">
+    <form
+      onSubmit={handleSubmit}
+      className="bg-white p-6 rounded-lg shadow-md"
+    >
       <div className="mb-4">
-        <label htmlFor="name" className="block text-[#394240] font-medium mb-2">
+        <label
+          htmlFor="name"
+          className="block text-[#394240] font-medium mb-2"
+        >
           Nome
         </label>
         <input
@@ -29,7 +35,10 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
       </div>
 
       <div className="mb-4">
-        <label htmlFor="email" className="block text-[#394240] font-medium mb-2">
+        <label
+          htmlFor="email"
+          className="block text-[#394240] font-medium mb-2"
+        >
           E-mail
         </label>
         <input
@@ -43,7 +52,10 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
       </div>
 
       <div className="mb-4">
-        <label htmlFor="phone" className="block text-[#394240] font-medium mb-2">
+        <label
+          htmlFor="phone"
+          className="block text-[#394240] font-medium mb-2"
+        >
           Telefone
         </label>
         <input
@@ -56,7 +68,10 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
       </div>
 
       <div className="mb-4">
-        <label htmlFor="subject" className="block text-[#394240] font-medium mb-2">
+        <label
+          htmlFor="subject"
+          className="block text-[#394240] font-medium mb-2"
+        >
           Assunto
         </label>
         <input
@@ -70,23 +85,23 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
       </div>
 
       <div className="mb-6">
-        <label htmlFor="message" className="block text-[#394240] font-medium mb-2">
+        <label
+          htmlFor="message"
+          className="block text-[#394240] font-medium mb-2"
+        >
           Mensagem
         </label>
         <textarea
           id="message"
           name="message"
-          rows={5}
+          rows={8}
           required
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#5C6857]"
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#5C6857] resize-y min-h-[120px]"
           placeholder="Digite sua mensagem aqui..."
         ></textarea>
       </div>
 
-      <button
-        type="submit"
-        className="btn-primary w-full"
-      >
+      <button type="submit" className="btn-primary w-full">
         Enviar Mensagem
       </button>
     </form>

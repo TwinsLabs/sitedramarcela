@@ -25,14 +25,18 @@ export default function LoginPage() {
       });
 
       if (result?.error) {
-        setError('Credenciais inválidas. Por favor, tente novamente.');
+        setError(
+          'Credenciais inválidas. Por favor, tente novamente.'
+        );
         setLoading(false);
         return;
       }
 
       router.push('/admin/dashboard');
     } catch (error) {
-      setError('Ocorreu um erro ao fazer login. Por favor, tente novamente.');
+      setError(
+        'Ocorreu um erro ao fazer login. Por favor, tente novamente.'
+      );
       setLoading(false);
     }
   };
@@ -41,28 +45,32 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center bg-[#E5DDD4] bg-opacity-30 px-4">
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
         <div className="flex justify-center mb-6">
-          <Image 
-            src="/images/logo.png" 
-            alt="Dra. Marcella Vieira" 
-            width={200} 
-            height={80} 
+          <Image
+            src="/images/logo.png"
+            alt="Dra. Marcella Vieira"
+            width={240}
+            height={100}
             className="h-auto"
+            priority
           />
         </div>
-        
+
         <h1 className="text-2xl font-serif text-center text-[#394240] mb-6">
           Painel Administrativo
         </h1>
-        
+
         {error && (
           <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
             {error}
           </div>
         )}
-        
+
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label htmlFor="email" className="block text-[#394240] font-medium mb-2">
+            <label
+              htmlFor="email"
+              className="block text-[#394240] font-medium mb-2"
+            >
               Email
             </label>
             <input
@@ -75,9 +83,12 @@ export default function LoginPage() {
               required
             />
           </div>
-          
+
           <div className="mb-6">
-            <label htmlFor="password" className="block text-[#394240] font-medium mb-2">
+            <label
+              htmlFor="password"
+              className="block text-[#394240] font-medium mb-2"
+            >
               Senha
             </label>
             <input
@@ -90,7 +101,7 @@ export default function LoginPage() {
               required
             />
           </div>
-          
+
           <button
             type="submit"
             disabled={loading}
@@ -99,10 +110,11 @@ export default function LoginPage() {
             {loading ? 'Entrando...' : 'Entrar'}
           </button>
         </form>
-        
+
         <div className="mt-4 text-center">
           <p className="text-sm text-gray-600">
-            Credenciais padrão: admin@dramarcellavieira.com.br / admin123
+            Credenciais padrão: admin@dramarcellavieira.com.br /
+            admin123
           </p>
         </div>
       </div>
