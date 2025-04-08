@@ -97,7 +97,7 @@ const BioSection = ({
             <h2 className="text-3xl md:text-4xl font-serif text-[#394240] mb-6">
               {title}
             </h2>
-            <div className="prose prose-lg max-w-none text-[#5C6857]">
+            <div className="prose prose-lg max-w-none text-[#5C6857] text-justify">
               {content.split('\n\n').map((paragraph, index) => (
                 <p key={index} className="mb-4">
                   {paragraph}

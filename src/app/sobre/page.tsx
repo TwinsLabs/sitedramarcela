@@ -73,7 +73,7 @@ export default function Sobre() {
         imageAlt="Dra. Marcella Vieira"
       />
 
-      <Credentials items={credentials} />
+      {/* <Credentials items={credentials} /> */}
 
       <ContactSection
         title="Entre em Contato"

@@ -93,7 +93,12 @@ const Hero = ({ page }: HeroProps) => {
             <div
               className="mb-6 animate-fade-in-right"
               style={{ animationDelay: '0.3s' }}
-            ></div>
+            >
+              <span className="credentials-badge">
+                Médica do Trabalho e Perita Médica CRM 80479 | RQE
+                61114
+              </span>
+            </div>
 
             {/* Texto de boas-vindas mais específico com tipografia secundária */}
 
@@ -149,9 +154,9 @@ const Hero = ({ page }: HeroProps) => {
                   <FaShieldAlt className="feature-icon text-[#5C6857] text-xl" />
                 </div>
                 <span className="font-secondary text-xs text-center text-[#394240] font-medium">
-                  Segurança
+                  Ética e
                   <br />
-                  Ocupacional
+                  Responsabilidade
                 </span>
               </div>
 

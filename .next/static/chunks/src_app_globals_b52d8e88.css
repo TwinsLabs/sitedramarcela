@@ -2487,6 +2487,10 @@ p, span, div, a, button {
   text-align: right;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .font-serif {
   font-family: Montserrat, ui-sans-serif, system-ui, sans-serif;
 }
