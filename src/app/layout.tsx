@@ -3,12 +3,12 @@ import React from 'react';
 import AuthProvider from './providers';
 import Layout from '@/components/layout/Layout';
 import './globals.css';
-import { Inter } from 'next/font/google';
+import { Montserrat } from 'next/font/google';
 
-const inter = Inter({
+const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-inter',
+  variable: '--font-montserrat',
 });
 
 export const metadata = {
@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className={`${inter.variable}`}>
+    <html lang="pt-BR" className={`${montserrat.variable}`}>
       <head>
         <meta
           name="viewport"
