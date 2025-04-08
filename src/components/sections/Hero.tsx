@@ -103,7 +103,7 @@ const Hero = ({ page }: HeroProps) => {
             {/* Texto de boas-vindas mais específico com tipografia secundária */}
 
             {/* Título com tipografia destacada */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-[#394240] mb-4 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-sans text-[#394240] mb-4 leading-tight">
               {title}
             </h1>
 
@@ -129,11 +129,6 @@ const Hero = ({ page }: HeroProps) => {
                 Solicitar Orçamento
                 <FaLongArrowAltRight className="ml-2" />
               </Link>
-
-              {/* Texto adicional abaixo do botão com tipografia secundária */}
-              <p className="font-secondary text-sm text-[#5C6857] italic opacity-80">
-                Atendimento personalizado para sua empresa
-              </p>
             </div>
 
             {/* Miniícones representando as áreas de atuação - com animação em estágios */}
