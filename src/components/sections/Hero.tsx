@@ -94,11 +94,8 @@ const Hero = ({ page }: HeroProps) => {
               className="mb-6 animate-fade-in-right"
               style={{ animationDelay: '0.3s' }}
             >
-              <span className="credentials-badge mr-2">
-                <FaUserMd className="mr-1" /> CRM 80479
-              </span>
               <span className="credentials-badge">
-                <FaShieldAlt className="mr-1" /> RQE: 61114
+                Médica do Trabalho | CRM 80479 | RQE 61114
               </span>
             </div>
 

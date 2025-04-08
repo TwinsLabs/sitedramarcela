@@ -31,7 +31,7 @@ const Header = () => {
                 Dra. Marcella Vieira
               </h1>
               <p className="text-xs text-[#5C6857]">
-                Médica do Trabalho • CRM 80479 • RQE: 61114
+                Médica do Trabalho | CRM 80479 | RQE 61114
               </p>
             </div>
           </Link>
