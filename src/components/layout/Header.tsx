@@ -51,7 +51,7 @@ const Header = () => {
                   href="/sobre"
                   className="text-[#394240] hover:text-[#A5776C] transition-colors"
                 >
-                  Sobre
+                  Dra. Marcella Vieira
                 </Link>
               </li>
               <li>
@@ -65,7 +65,7 @@ const Header = () => {
               <li>
                 <Link
                   href="/painel"
-                  className="text-[#394240] hover:text-[#A5776C] transition-colors"
+                  className="text-[#394240] hover:text-[#A5776C] transition-colors whitespace-nowrap"
                 >
                   Painel
                 </Link>
@@ -118,7 +118,7 @@ const Header = () => {
                     className="block text-[#394240] hover:text-[#A5776C] transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    Sobre
+                    Dra. Marcella Vieira
                   </Link>
                 </li>
                 <li>

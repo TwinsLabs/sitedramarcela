@@ -93,22 +93,9 @@ const Hero = ({ page }: HeroProps) => {
             <div
               className="mb-6 animate-fade-in-right"
               style={{ animationDelay: '0.3s' }}
-            >
-              <span className="credentials-badge">
-                Médica do Trabalho | CRM 80479 | RQE 61114
-              </span>
-            </div>
+            ></div>
 
             {/* Texto de boas-vindas mais específico com tipografia secundária */}
-            <p
-              className="font-secondary text-[#5C6857] font-medium mb-2 tracking-widest uppercase text-sm animate-fade-in"
-              style={{
-                animationDelay: '0.5s',
-                letterSpacing: '0.15em',
-              }}
-            >
-              EXCELÊNCIA EM SAÚDE OCUPACIONAL
-            </p>
 
             {/* Título com tipografia destacada */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-[#394240] mb-4 leading-tight">
