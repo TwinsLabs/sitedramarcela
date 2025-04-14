@@ -72,7 +72,7 @@ const Hero = ({ page }: HeroProps) => {
   const title = content['hero-title'] || 'Dra. Marcella Vieira';
   const subtitle =
     content['hero-subtitle'] ||
-    'Médica do Trabalho especializada em perícias médicas e consultoria em saúde ocupacional.';
+    'Médica do Trabalho e Perita Médica CRM 80479 | RQE 61114';
 
   return (
     <section className="hero-gradient-bg py-16 md:py-28 relative overflow-hidden subtle-pattern">
