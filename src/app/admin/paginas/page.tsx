@@ -40,7 +40,7 @@ export default function PaginasAdmin() {
           id: 'home-hero-subtitle',
           title: 'Subtítulo do Hero',
           content:
-            'Médica do Trabalho especializada em perícias médicas e consultoria em saúde ocupacional.',
+            'Médica do Trabalho e Perita Médica CRM 80479 | RQE 61114',
           section: 'hero',
           page: 'home',
         },
@@ -72,7 +72,7 @@ export default function PaginasAdmin() {
           id: 'sobre-subtitle',
           title: 'Subtítulo da Página',
           content:
-            'Médica do Trabalho especializada em perícias médicas e consultoria em saúde ocupacional.',
+            'Médica do Trabalho e Perita Médica CRM 80479 | RQE 61114',
           section: 'header',
           page: 'sobre',
         },

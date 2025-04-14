@@ -51,7 +51,7 @@ export const ContentProvider = ({
           home: {
             'hero-title': 'Dra. Marcella Vieira',
             'hero-subtitle':
-              'Médica do Trabalho especializada em perícias médicas e consultoria em saúde ocupacional.',
+              'Médica do Trabalho e Perita Médica CRM 80479 | RQE 61114',
             'services-title': 'Serviços Especializados',
             'services-subtitle':
               'Conheça os serviços de excelência em Medicina do Trabalho e Perícias Médicas.',

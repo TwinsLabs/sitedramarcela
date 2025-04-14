@@ -14,7 +14,7 @@ const montserrat = Montserrat({
 export const metadata = {
   title: 'Dra. Marcella Vieira | Médica do Trabalho',
   description:
-    'Dra. Marcella Vieira - Médica do Trabalho especializada em perícias médicas e consultoria em saúde ocupacional.',
+    'Dra. Marcella Vieira - Médica do Trabalho e Perita Médica CRM 80479 | RQE 61114',
 };
 
 export default function RootLayout({

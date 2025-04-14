@@ -21,7 +21,7 @@ export default function Sobre() {
   const title = content['title'] || 'Sobre Dra. Marcella Vieira';
   const subtitle =
     content['subtitle'] ||
-    'Médica do Trabalho especializada em perícias médicas e consultoria em saúde ocupacional.';
+    'Médica do Trabalho e Perita Médica CRM 80479 | RQE 61114';
   const bioTitle = content['bio-title'] || 'Biografia';
   const bioContent = content['bio-content'] || '';
 
