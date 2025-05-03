@@ -53,18 +53,6 @@ const ContactSection = ({
             <div className="space-y-8">
               <div className="flex items-start transform transition-transform hover:translate-x-2 duration-300">
                 <div className="bg-[#F8F6F4] p-3 rounded-full text-[#A5776C] mr-4">
-                  <FaPhone className="w-5 h-5" />
-                </div>
-                <div>
-                  <h4 className="text-lg font-medium text-[#394240] mb-1">
-                    Telefone
-                  </h4>
-                  <p className="text-[#5C6857]">(XX) XXXXX-XXXX</p>
-                </div>
-              </div>
-
-              <div className="flex items-start transform transition-transform hover:translate-x-2 duration-300">
-                <div className="bg-[#F8F6F4] p-3 rounded-full text-[#A5776C] mr-4">
                   <FaWhatsapp className="w-5 h-5" />
                 </div>
                 <div>
@@ -72,10 +60,10 @@ const ContactSection = ({
                     WhatsApp
                   </h4>
                   <a
-                    href="https://wa.me/XXXXXXXXXXX"
+                    href="https://wa.me/5534984015538"
                     className="text-[#5C6857] hover:text-[#A5776C] transition-colors"
                   >
-                    (XX) XXXXX-XXXX
+                    (34) 98401-5538
                   </a>
                 </div>
               </div>
@@ -89,25 +77,11 @@ const ContactSection = ({
                     E-mail
                   </h4>
                   <a
-                    href="mailto:contato@dramarcellavieira.com.br"
+                    href="mailto:dramarcellaribeirovieira@gmail.com"
                     className="text-[#5C6857] hover:text-[#A5776C] transition-colors"
                   >
-                    contato@dramarcellavieira.com.br
+                    dramarcellaribeirovieira@gmail.com
                   </a>
-                </div>
-              </div>
-
-              <div className="flex items-start transform transition-transform hover:translate-x-2 duration-300">
-                <div className="bg-[#F8F6F4] p-3 rounded-full text-[#A5776C] mr-4">
-                  <FaMapMarkerAlt className="w-5 h-5" />
-                </div>
-                <div>
-                  <h4 className="text-lg font-medium text-[#394240] mb-1">
-                    Localização
-                  </h4>
-                  <p className="text-[#5C6857]">
-                    Atendimento em todo o Brasil
-                  </p>
                 </div>
               </div>
             </div>
@@ -118,13 +92,13 @@ const ContactSection = ({
               </h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://instagram.com/dramarcellavieira"
+                  href="https://www.instagram.com/marcellarivieira"
                   className="bg-[#F8F6F4] p-3 rounded-full text-[#A5776C] hover:bg-[#A5776C] hover:text-white transition-all duration-300"
                 >
                   <FaInstagram className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://linkedin.com/in/dramarcellavieira"
+                  href="http://linkedin.com/in/marcella-r-31373a235"
                   className="bg-[#F8F6F4] p-3 rounded-full text-[#A5776C] hover:bg-[#A5776C] hover:text-white transition-all duration-300"
                 >
                   <FaLinkedin className="w-5 h-5" />

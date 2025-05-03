@@ -202,14 +202,12 @@ export const ContentProvider = ({
 
         // Dados mockados para informações de contato
         const mockContactInfo = {
-          phone: '(XX) XXXXX-XXXX',
-          whatsapp: '(XX) XXXXX-XXXX',
+          whatsapp: '(34) 98401-5538',
           email: 'contato@dramarcellavieira.com.br',
           instagram: 'https://instagram.com/dramarcellavieira',
           linkedin: 'https://linkedin.com/in/dramarcellavieira',
           salesPageUrl: 'https://exemplo-pagina-vendas.com',
         };
-
         // Atualizar o estado com os dados mockados
         setPageContent(mockPageContent);
         setServiceContent(mockServiceContent);
