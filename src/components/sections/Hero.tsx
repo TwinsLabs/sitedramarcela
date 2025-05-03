@@ -105,7 +105,7 @@ const Hero = ({ page }: HeroProps) => {
             {/* Subtítulo com fonte secundária para maior destaque */}
             <p className="font-secondary text-lg md:text-xl text-[#5C6857] mb-8 font-light leading-relaxed max-w-lg">
               <strong>Médica do Trabalho</strong> e{' '}
-              <strong>Perita Médica </strong> CRM 80479 | RQE 61114';
+              <strong>Perita Médica </strong> CRM 80479 | RQE 61114;
             </p>
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-8">
