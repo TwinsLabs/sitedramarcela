@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
 
     const { data, error } = await resend.emails.send({
       from: 'Formulário de Contato <onboarding@resend.dev>',
-      to: 'elialberlopes@gmail.com',
+      to: 'dramarcellaribeirovieira@gmail.com',
       subject: `[Site Dra. Marcella] ${subject}`,
       text: `
 Nome: ${name}
