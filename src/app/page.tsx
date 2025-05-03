@@ -25,9 +25,8 @@ export default function Home() {
   const bioContent = sobreContent['bio-content'] || '';
 
   const handleContactSubmit = (formData: any) => {
-    console.log('Form data:', formData);
-    // Aqui seria implementada a lógica para enviar o formulário
-    alert('Mensagem enviada com sucesso!');
+    console.log('Form data received on home page:', formData);
+    // O envio agora é tratado pelo componente ContactForm
   };
 
   return (
