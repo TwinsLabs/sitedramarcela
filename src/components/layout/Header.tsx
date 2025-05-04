@@ -68,7 +68,7 @@ const Header = () => {
                   href="/painel"
                   className="text-[#394240] hover:text-[#A5776C] transition-colors whitespace-nowrap"
                 >
-                  Painel
+                  Painel Inteligente
                 </Link>
               </li>
               <li>

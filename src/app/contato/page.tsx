@@ -72,25 +72,18 @@ export default function Contato() {
               <div className="space-y-6 mb-8">
                 <div className="flex items-center">
                   <div className="w-12 h-12 rounded-full bg-[#5C6857] flex items-center justify-center text-white mr-4">
-                    <FaPhone />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-medium text-[#394240]">
-                      Telefone
-                    </h3>
-                    <p>{contactInfo.phone}</p>
-                  </div>
-                </div>
-
-                <div className="flex items-center">
-                  <div className="w-12 h-12 rounded-full bg-[#5C6857] flex items-center justify-center text-white mr-4">
                     <FaWhatsapp />
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-[#394240]">
                       WhatsApp
                     </h3>
-                    <p>{contactInfo.whatsapp}</p>
+                    <a
+                      href="https://wa.me/5534984015538"
+                      className="text-[#5C6857] hover:text-[#A5776C] transition-colors"
+                    >
+                      <p>{contactInfo.whatsapp}</p>
+                    </a>
                   </div>
                 </div>
 

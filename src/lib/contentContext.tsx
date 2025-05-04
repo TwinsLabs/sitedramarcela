@@ -203,9 +203,10 @@ export const ContentProvider = ({
         // Dados mockados para informações de contato
         const mockContactInfo = {
           whatsapp: '(34) 98401-5538',
-          email: 'contato@dramarcellavieira.com.br',
-          instagram: 'https://instagram.com/dramarcellavieira',
-          linkedin: 'https://linkedin.com/in/dramarcellavieira',
+          email: 'dramarcellavieira@gmail.com',
+          instagram: 'https://www.instagram.com/marcellarivieira',
+          linkedin:
+            'https://www.linkedin.com/in/marcella-r-31373a235',
           salesPageUrl: 'https://exemplo-pagina-vendas.com',
         };
         // Atualizar o estado com os dados mockados

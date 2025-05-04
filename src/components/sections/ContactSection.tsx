@@ -107,53 +107,10 @@ const ContactSection = ({
             </div>
 
             {/* Depoimento */}
-            <div className="mt-10 bg-[#F8F6F4] p-6 rounded-lg relative">
-              <FaQuoteRight className="absolute top-4 right-4 text-[#A5776C] opacity-20 text-4xl" />
-              <p className="text-[#5C6857] italic mb-3">
-                "A consultoria da Dra. Marcella foi essencial para
-                nossa empresa implementar processos de saúde
-                ocupacional que realmente funcionam."
-              </p>
-              <div className="flex items-center">
-                <div className="flex text-[#A5776C]">
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                </div>
-                <span className="ml-2 text-sm text-[#394240] font-medium">
-                  Maria Silva, Diretora de RH
-                </span>
-              </div>
-            </div>
           </div>
 
           <div>
             <ContactForm onSubmit={onSubmit} />
-            <div className="mt-8 flex flex-col items-center">
-              <div className="flex items-center justify-center mb-4">
-                <span className="h-px w-16 bg-[#E5DDD4]"></span>
-                <span className="mx-4 text-[#5C6857] text-sm">
-                  PARCERIAS E AFILIAÇÕES
-                </span>
-                <span className="h-px w-16 bg-[#E5DDD4]"></span>
-              </div>
-              <div className="flex flex-wrap justify-center gap-6">
-                <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm border border-[#E5DDD4] hover:shadow-md transition-all duration-300 group">
-                  <FaUniversity className="h-12 w-12 text-gray-400 group-hover:text-[#A5776C] transition-all duration-300" />
-                  <span className="mt-2 text-xs text-[#5C6857] font-medium">
-                    Conselho Regional de Medicina
-                  </span>
-                </div>
-                <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm border border-[#E5DDD4] hover:shadow-md transition-all duration-300 group">
-                  <FaBuilding className="h-12 w-12 text-gray-400 group-hover:text-[#A5776C] transition-all duration-300" />
-                  <span className="mt-2 text-xs text-[#5C6857] font-medium">
-                    ANAMT
-                  </span>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

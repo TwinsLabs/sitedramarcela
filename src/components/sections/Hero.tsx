@@ -48,10 +48,13 @@ const Hero = ({ page }: HeroProps) => {
       const iconElements =
         iconsRef.current.querySelectorAll('.feature-item');
       iconElements.forEach((el, index) => {
-        setTimeout(() => {
-          el.classList.add('opacity-100');
-          el.classList.remove('opacity-0', 'translate-y-4');
-        }, 1000 + index * 200); // Delay crescente para cada ícone
+        setTimeout(
+          () => {
+            el.classList.add('opacity-100');
+            el.classList.remove('opacity-0', 'translate-y-4');
+          },
+          1000 + index * 200
+        ); // Delay crescente para cada ícone
       });
     }
 
@@ -104,8 +107,7 @@ const Hero = ({ page }: HeroProps) => {
 
             {/* Subtítulo com fonte secundária para maior destaque */}
             <p className="font-secondary text-lg md:text-xl text-[#5C6857] mb-8 font-light leading-relaxed max-w-lg">
-              <strong>Médica do Trabalho</strong> e{' '}
-              <strong>Perita Médica </strong> CRM 80479 | RQE 61114;
+              Médica do Trabalho e Perita Médica CRM 80479 | RQE 61114
             </p>
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-8">
