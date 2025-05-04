@@ -126,24 +126,6 @@ export default function Contato() {
           </div>
         </div>
       </section>
-
-      <section className="section-padding bg-[#E5DDD4] bg-opacity-30">
-        <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-serif text-[#394240] mb-4">
-              Solicite um Orçamento
-            </h2>
-            <p className="text-lg text-[#5C6857] max-w-3xl mx-auto">
-              Preencha o formulário abaixo para solicitar um orçamento
-              personalizado para os serviços de seu interesse.
-            </p>
-          </div>
-
-          <div className="max-w-3xl mx-auto">
-            <QuoteRequestForm onSubmit={handleQuoteSubmit} />
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
