@@ -107,7 +107,7 @@ const Hero = ({ page }: HeroProps) => {
 
             {/* Subtítulo com fonte secundária para maior destaque */}
             <p className="font-secondary text-lg md:text-xl text-[#5C6857] mb-8 font-light leading-relaxed max-w-lg">
-              Médica <br /> do Trabalho e Perita Médica CRM 80479 |
+              Médica do Trabalho e Perita Médica <br /> CRM 80479 |
               RQE 61114
             </p>
 
