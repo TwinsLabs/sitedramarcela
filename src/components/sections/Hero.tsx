@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useContent } from '@/lib/contentContext';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -19,6 +19,37 @@ const Hero = ({ page }: HeroProps) => {
   const { pageContent, isLoading } = useContent();
   const imageRef = useRef<HTMLDivElement>(null);
   const iconsRef = useRef<HTMLDivElement>(null);
+  const [currentImage, setCurrentImage] = useState<number>(1);
+  const [isTransitioning, setIsTransitioning] =
+    useState<boolean>(false);
+
+  // Transição automática entre imagens com animação melhorada
+  useEffect(() => {
+    const imageInterval = setInterval(() => {
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setCurrentImage((prev) => (prev === 1 ? 2 : 1));
+        setTimeout(() => {
+          setIsTransitioning(false);
+        }, 300);
+      }, 700);
+    }, 6000); // Intervalo um pouco maior para apreciar melhor cada imagem
+
+    return () => clearInterval(imageInterval);
+  }, []);
+
+  // Função para trocar imagem manualmente com animação
+  const changeImage = (imageNumber: number) => {
+    if (currentImage === imageNumber) return;
+
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setCurrentImage(imageNumber);
+      setTimeout(() => {
+        setIsTransitioning(false);
+      }, 300);
+    }, 700);
+  };
 
   // Animação suave ao carregar a página
   useEffect(() => {
@@ -174,30 +205,46 @@ const Hero = ({ page }: HeroProps) => {
             <div className="absolute w-[200px] h-[200px] rounded-full bg-[#4682B4] opacity-20 z-0 bottom-[-30px] right-[-30px] animate-float" />
 
             {/* Moldura para o retrato - destaque visual */}
-            <div className="portrait-frame w-full max-w-xl h-[450px] md:h-[600px] z-10">
+            <div className="portrait-frame w-full max-w-2xl h-[500px] md:h-[650px] z-10 relative">
               {/* Luz de fundo sutil */}
               <div className="absolute inset-0 bg-gradient-to-tr from-[#5C6857] via-transparent to-transparent opacity-10 z-0"></div>
 
-              <Image
-                src="/images/01.png"
-                alt={title}
-                fill
-                className="object-contain"
-                priority
-                style={{
-                  transition: 'transform 0.5s ease-in-out',
-                  animation:
-                    'fadeIn 1.5s ease-out forwards, slideIn 1.5s ease-out forwards',
-                  opacity: 0,
-                  transform: 'translateX(20px)',
-                }}
-                onMouseOver={(e) => {
-                  e.currentTarget.style.transform = 'scale(1.02)';
-                }}
-                onMouseOut={(e) => {
-                  e.currentTarget.style.transform = 'scale(1)';
-                }}
-              />
+              <div className="relative w-full h-full">
+                <Image
+                  src={`/images/0${currentImage}.png`}
+                  alt={title}
+                  fill
+                  className={`object-contain transition-all duration-1000 ease-in-out ${isTransitioning ? 'opacity-0 scale-[1.02]' : 'opacity-100 scale-100'}`}
+                  priority
+                  style={{
+                    transformOrigin: 'center center',
+                  }}
+                  onMouseOver={(e) => {
+                    if (!isTransitioning) {
+                      e.currentTarget.style.transform = 'scale(1.03)';
+                    }
+                  }}
+                  onMouseOut={(e) => {
+                    if (!isTransitioning) {
+                      e.currentTarget.style.transform = 'scale(1)';
+                    }
+                  }}
+                />
+              </div>
+
+              {/* Controles de navegação manual para as imagens - redesenhados */}
+              <div className="absolute bottom-6 left-0 right-0 flex justify-center space-x-3">
+                <button
+                  onClick={() => changeImage(1)}
+                  className={`w-3 h-3 rounded-full transition-all duration-500 ease-in-out ${currentImage === 1 ? 'bg-[#5C6857] scale-125' : 'bg-gray-300 hover:bg-gray-400'}`}
+                  aria-label="Imagem 1"
+                />
+                <button
+                  onClick={() => changeImage(2)}
+                  className={`w-3 h-3 rounded-full transition-all duration-500 ease-in-out ${currentImage === 2 ? 'bg-[#5C6857] scale-125' : 'bg-gray-300 hover:bg-gray-400'}`}
+                  aria-label="Imagem 2"
+                />
+              </div>
 
               {/* Elemento de destaque sobre a imagem */}
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-white to-transparent h-[100px] opacity-20"></div>
