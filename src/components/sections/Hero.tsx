@@ -179,7 +179,7 @@ const Hero = ({ page }: HeroProps) => {
               <div className="absolute inset-0 bg-gradient-to-tr from-[#5C6857] via-transparent to-transparent opacity-10 z-0"></div>
 
               <Image
-                src="/images/medica.png"
+                src="/images/01.png"
                 alt={title}
                 fill
                 className="object-contain"
