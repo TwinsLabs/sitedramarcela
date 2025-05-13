@@ -19,7 +19,7 @@ const Hero = ({ page }: HeroProps) => {
   const { pageContent, isLoading } = useContent();
   const imageRef = useRef<HTMLDivElement>(null);
   const iconsRef = useRef<HTMLDivElement>(null);
-  const [currentImage, setCurrentImage] = useState<number>(1);
+  const [currentImage, setCurrentImage] = useState<number>(3);
   const [isTransitioning, setIsTransitioning] =
     useState<boolean>(false);
 
@@ -28,7 +28,7 @@ const Hero = ({ page }: HeroProps) => {
     const imageInterval = setInterval(() => {
       setIsTransitioning(true);
       setTimeout(() => {
-        setCurrentImage((prev) => (prev === 1 ? 2 : 1));
+        setCurrentImage((prev) => (prev === 3 ? 4 : 3));
         setTimeout(() => {
           setIsTransitioning(false);
         }, 300);
@@ -235,14 +235,14 @@ const Hero = ({ page }: HeroProps) => {
               {/* Controles de navegação manual para as imagens - redesenhados */}
               <div className="absolute bottom-6 left-0 right-0 flex justify-center space-x-3">
                 <button
-                  onClick={() => changeImage(1)}
-                  className={`w-3 h-3 rounded-full transition-all duration-500 ease-in-out ${currentImage === 1 ? 'bg-[#5C6857] scale-125' : 'bg-gray-300 hover:bg-gray-400'}`}
-                  aria-label="Imagem 1"
+                  onClick={() => changeImage(3)}
+                  className={`w-3 h-3 rounded-full transition-all duration-500 ease-in-out ${currentImage === 3 ? 'bg-[#5C6857] scale-125' : 'bg-gray-300 hover:bg-gray-400'}`}
+                  aria-label="Imagem 3"
                 />
                 <button
-                  onClick={() => changeImage(2)}
-                  className={`w-3 h-3 rounded-full transition-all duration-500 ease-in-out ${currentImage === 2 ? 'bg-[#5C6857] scale-125' : 'bg-gray-300 hover:bg-gray-400'}`}
-                  aria-label="Imagem 2"
+                  onClick={() => changeImage(4)}
+                  className={`w-3 h-3 rounded-full transition-all duration-500 ease-in-out ${currentImage === 4 ? 'bg-[#5C6857] scale-125' : 'bg-gray-300 hover:bg-gray-400'}`}
+                  aria-label="Imagem 4"
                 />
               </div>
 
