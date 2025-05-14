@@ -19,7 +19,7 @@ const Hero = ({ page }: HeroProps) => {
   const { pageContent, isLoading } = useContent();
   const imageRef = useRef<HTMLDivElement>(null);
   const iconsRef = useRef<HTMLDivElement>(null);
-  const [currentImage, setCurrentImage] = useState<number>(3);
+  const [currentImage, setCurrentImage] = useState<number>(1);
   const [isTransitioning, setIsTransitioning] =
     useState<boolean>(false);
 
@@ -28,7 +28,7 @@ const Hero = ({ page }: HeroProps) => {
     const imageInterval = setInterval(() => {
       setIsTransitioning(true);
       setTimeout(() => {
-        setCurrentImage((prev) => (prev === 3 ? 4 : 3));
+        setCurrentImage((prev) => (prev === 1 ? 2 : 1));
         setTimeout(() => {
           setIsTransitioning(false);
         }, 300);
