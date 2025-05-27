@@ -199,10 +199,10 @@ const Hero = ({ page }: HeroProps) => {
             ref={imageRef}
           >
             {/* Círculo decorativo azul claro */}
-            <div className="absolute w-[400px] h-[400px] rounded-full bg-[#87CEEB] opacity-20 z-0 right-[-50px] animate-pulse-slow" />
+            <div className="absolute w-[400px] h-[400px] rounded-full bg-[#A5776C] opacity-6 z-0 right-[-50px] animate-pulse-slow" />
 
             {/* Forma decorativa azul escuro */}
-            <div className="absolute w-[200px] h-[200px] rounded-full bg-[#4682B4] opacity-20 z-0 bottom-[-30px] right-[-30px] animate-float" />
+            <div className="absolute w-[200px] h-[200px] rounded-full bg-[#A5776C] opacity-5 z-0 bottom-[-30px] right-[-30px] animate-float" />
 
             {/* Moldura para o retrato - destaque visual */}
             <div className="portrait-frame w-full max-w-2xl h-[500px] md:h-[650px] z-10 relative">
