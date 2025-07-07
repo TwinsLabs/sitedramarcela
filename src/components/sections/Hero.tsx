@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useContent } from '@/lib/contentContext';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -19,37 +19,6 @@ const Hero = ({ page }: HeroProps) => {
   const { pageContent, isLoading } = useContent();
   const imageRef = useRef<HTMLDivElement>(null);
   const iconsRef = useRef<HTMLDivElement>(null);
-  const [currentImage, setCurrentImage] = useState<number>(1);
-  const [isTransitioning, setIsTransitioning] =
-    useState<boolean>(false);
-
-  // Transição automática entre imagens com animação melhorada
-  useEffect(() => {
-    const imageInterval = setInterval(() => {
-      setIsTransitioning(true);
-      setTimeout(() => {
-        setCurrentImage((prev) => (prev === 1 ? 2 : 1));
-        setTimeout(() => {
-          setIsTransitioning(false);
-        }, 300);
-      }, 700);
-    }, 6000); // Intervalo um pouco maior para apreciar melhor cada imagem
-
-    return () => clearInterval(imageInterval);
-  }, []);
-
-  // Função para trocar imagem manualmente com animação
-  const changeImage = (imageNumber: number) => {
-    if (currentImage === imageNumber) return;
-
-    setIsTransitioning(true);
-    setTimeout(() => {
-      setCurrentImage(imageNumber);
-      setTimeout(() => {
-        setIsTransitioning(false);
-      }, 300);
-    }, 700);
-  };
 
   // Animação suave ao carregar a página
   useEffect(() => {
@@ -211,38 +180,14 @@ const Hero = ({ page }: HeroProps) => {
 
               <div className="relative w-full h-full">
                 <Image
-                  src={`/images/0${currentImage}.png`}
+                  src="/images/01.png"
                   alt={title}
                   fill
-                  className={`object-contain transition-all duration-1000 ease-in-out ${isTransitioning ? 'opacity-0 scale-[1.02]' : 'opacity-100 scale-100'}`}
+                  className="object-contain transition-all duration-300 ease-in-out hover:scale-105"
                   priority
                   style={{
                     transformOrigin: 'center center',
                   }}
-                  onMouseOver={(e) => {
-                    if (!isTransitioning) {
-                      e.currentTarget.style.transform = 'scale(1.03)';
-                    }
-                  }}
-                  onMouseOut={(e) => {
-                    if (!isTransitioning) {
-                      e.currentTarget.style.transform = 'scale(1)';
-                    }
-                  }}
-                />
-              </div>
-
-              {/* Controles de navegação manual para as imagens - redesenhados */}
-              <div className="absolute bottom-6 left-0 right-0 flex justify-center space-x-3">
-                <button
-                  onClick={() => changeImage(3)}
-                  className={`w-3 h-3 rounded-full transition-all duration-500 ease-in-out ${currentImage === 3 ? 'bg-[#5C6857] scale-125' : 'bg-gray-300 hover:bg-gray-400'}`}
-                  aria-label="Imagem 3"
-                />
-                <button
-                  onClick={() => changeImage(4)}
-                  className={`w-3 h-3 rounded-full transition-all duration-500 ease-in-out ${currentImage === 4 ? 'bg-[#5C6857] scale-125' : 'bg-gray-300 hover:bg-gray-400'}`}
-                  aria-label="Imagem 4"
                 />
               </div>
 
