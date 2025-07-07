@@ -205,9 +205,9 @@ const Hero = ({ page }: HeroProps) => {
             <div className="absolute w-[200px] h-[200px] rounded-full bg-[#A5776C] opacity-5 z-0 bottom-[-30px] right-[-30px] animate-float" />
 
             {/* Moldura para o retrato - destaque visual */}
-            <div className="portrait-frame w-full max-w-2xl h-[500px] md:h-[650px] z-10 relative">
+            <div className="w-full max-w-2xl h-[500px] md:h-[650px] z-10 relative">
               {/* Luz de fundo sutil */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-[#5C6857] via-transparent to-transparent opacity-10 z-0"></div>
+              <div className="absolute inset-0 bg-gradient-to-tr from-[#dfe2df] via-transparent to-transparent opacity-10 z-0"></div>
 
               <div className="relative w-full h-full">
                 <Image
