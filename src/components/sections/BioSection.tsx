@@ -64,7 +64,7 @@ const BioSection = ({
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative h-[450px] md:h-[600px] bio-animate opacity-0 translate-y-8 transition duration-700 ease-out">
             {/* Círculo decorativo */}
-            <div className="absolute w-[350px] h-[350px] rounded-full bg-[#87CEEB] opacity-20 z-0 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-pulse-slow" />
+            <div className="absolute w-[350px] h-[350px] rounded-full bg-[#F5F1EA] opacity-20 z-0 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-pulse-slow" />
 
             <Image
               src={imageSrc}
