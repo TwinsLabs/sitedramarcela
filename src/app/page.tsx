@@ -45,8 +45,6 @@ export default function Home() {
 
       <ServicesGrid page="home" />
 
-      <LandingProductPanel className="mt-16" />
-
       <ContactSection
         title="Entre em Contato"
         subtitle="Estou à disposição para esclarecer dúvidas e atender às suas necessidades."

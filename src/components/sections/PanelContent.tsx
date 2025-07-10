@@ -43,8 +43,8 @@ const PanelContent = ({ className = '' }: PanelContentProps) => {
       className={`section-padding bg-white relative overflow-hidden ${className}`}
     >
       {/* Formas decorativas */}
-      <div className="absolute top-[-100px] right-[-100px] w-[300px] h-[300px] bg-[#87CEEB] rounded-full opacity-10" />
-      <div className="absolute bottom-[-50px] left-[-50px] w-[200px] h-[200px] bg-[#4682B4] rounded-full opacity-10" />
+      <div className="absolute top-[-100px] right-[-100px] w-[300px] h-[300px] bg-[#f5f1ee] rounded-full " />
+      <div className="absolute bottom-[-50px] left-[-50px] w-[200px] h-[200px] bg-[#f5f1ee] rounded-full" />
 
       <div className="container-custom relative z-10">
         <div className="panel-animate opacity-0 translate-y-8 transition duration-700 ease-out">
@@ -234,7 +234,7 @@ const PanelContent = ({ className = '' }: PanelContentProps) => {
           </div>
 
           <div className="panel-animate opacity-0 translate-y-8 transition duration-700 delay-300 ease-out">
-            <div className="bg-[#E5DDD4] bg-opacity-40 rounded-lg p-6 shadow-lg">
+            <div className="bg-[#f5f1ee] bg-opacity-40 rounded-lg p-6 shadow-lg">
               <h3 className="text-xl font-serif text-[#394240] mb-4 text-center">
                 Painel Completo
               </h3>
