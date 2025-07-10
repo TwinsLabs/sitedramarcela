@@ -71,11 +71,11 @@ export const ContentProvider = ({
           },
           painel: {
             title:
-              'Painel "Medicina do Trabalho Prática e Inteligente"',
+              'Painel Inteligente de Medicina do Trabalho e Perícias Médicas',
             subtitle:
               'Documentos, modelos e templates essenciais para a prática da Medicina do Trabalho e Perícias Médicas.',
             intro:
-              'O Painel "Medicina do Trabalho Prática e Inteligente" foi desenvolvido especialmente para profissionais da área de Medicina do Trabalho e Perícias Médicas que buscam praticidade, eficiência e materiais de qualidade para o exercício da sua profissão. Ao adquirir o painel, você terá acesso a um conteúdo exclusivo, composto por documentos cuidadosamente elaborados, prontos para serem utilizados em suas rotinas de trabalho, aumentando sua produtividade e assertividade.',
+              'O Painel Inteligente de Medicina do Trabalho e Perícias Médicas foi desenvolvido especialmente para profissionais da área de Medicina do Trabalho e Perícias Médicas que buscam praticidade, eficiência e materiais de qualidade para o exercício da sua profissão. Ao adquirir o painel, você terá acesso a um conteúdo exclusivo, composto por documentos cuidadosamente elaborados, prontos para serem utilizados em suas rotinas de trabalho, aumentando sua produtividade e assertividade.',
             'cta-text':
               'O Painel não é apenas um conjunto de documentos, mas uma ferramenta de otimização e inovação no seu trabalho. Com ele, você terá à disposição uma verdadeira "biblioteca" de materiais que são constantemente atualizados e alinhados com as necessidades da sua área.\n\nInvestir nesse painel é garantir que você economize tempo e tenha acesso ao melhor conteúdo, ajudando a tornar o seu trabalho mais eficiente, inteligente e com maior impacto na saúde e segurança dos trabalhadores.',
           },

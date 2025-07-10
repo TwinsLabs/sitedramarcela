@@ -133,7 +133,7 @@ const LandingProductPanel = ({
 
             <div className="flex space-x-4 mt-8">
               <Link
-                href="/contato"
+                href="https://dramarcellaribeirovieira.hotmart.host/painel-inteligente-de-medicina-do-trabalho-e-pericias-medicas-4be0ee70-1f7b-4718-8cd7-b184bec0fc6e"
                 className="btn-primary flex items-center justify-center hover-zoom px-8 py-3"
                 style={{
                   animation: 'fadeInUp 1.2s ease-out 0.8s forwards',

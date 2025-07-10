@@ -48,15 +48,15 @@ const PanelContent = ({ className = '' }: PanelContentProps) => {
 
       <div className="container-custom relative z-10">
         <div className="panel-animate opacity-0 translate-y-8 transition duration-700 ease-out">
-          <h2 className="text-3xl md:text-4xl font-serif text-[#394240] mb-6 text-center">
-            Painel "Medicina do Trabalho Prática e Inteligente"
-          </h2>
-          <div className="h-1 w-20 bg-[#5C6857] mx-auto mb-8"></div>
           <p className="text-lg text-[#5C6857] max-w-3xl mx-auto text-center mb-12">
-            Desenvolvido especialmente para profissionais da área de
-            Medicina do Trabalho e Perícias Médicas que buscam
-            praticidade, eficiência e materiais de qualidade para o
-            exercício da profissão.
+            Pensando nesses desafios do dia a dia, desenvolvemos o{' '}
+            <b>
+              Painel Inteligente de Medicina do Trabalho e Perícias
+              Médicas
+            </b>{' '}
+            — uma plataforma digital criada especialmente para
+            agilizar e qualificar o trabalho de profissionais da área,
+            sem abrir mão da segurança jurídica.
           </p>
         </div>
 
@@ -81,140 +81,154 @@ const PanelContent = ({ className = '' }: PanelContentProps) => {
           <div className="lg:col-span-2">
             <div className="panel-animate opacity-0 translate-y-8 transition duration-700 delay-200 ease-out">
               <h3 className="text-2xl font-serif text-[#394240] mb-6">
-                O que você encontrará no Painel?
+                O que é o Painel?
               </h3>
               <p className="text-[#5C6857] mb-8">
-                Ao adquirir o painel, você poderá realizar o download
-                de materiais diversos, incluindo modelos, templates,
-                checklists e relatórios essenciais para a Medicina do
-                Trabalho e Perícias Médicas.
+                É uma <b>biblioteca digital prática e organizada </b>,
+                com acesso imediato a uma série de documentos técnicos
+                e juridicamente validados, prontos para uso em
+                contextos de:
               </p>
 
-              <h4 className="text-xl font-serif text-[#394240] mb-4">
-                Documentos incluídos:
-              </h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 <div>
                   <div className="flex items-start mb-3">
                     <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
-                    <p>
-                      Modelo Ficha Clínica Ocupacional - Exames
-                      Admissional, Periódico, etc.
+                    <p>Consultórios de saúde ocupacional</p>
+                  </div>
+                  <div className="flex items-start mb-3">
+                    <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
+                    <p className="whitespace-nowrap">
+                      Atuação como perito judicial ou assistente
+                      técnico;
                     </p>
                   </div>
                   <div className="flex items-start mb-3">
                     <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
-                    <p>
-                      Modelo Ficha Clínica para atendimentos em
-                      Ortopedia
-                    </p>
+                    <p>Auditorias e fiscalizações</p>
                   </div>
                   <div className="flex items-start mb-3">
                     <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
-                    <p>Modelo de Solicitação de Parecer/Relatórios</p>
-                  </div>
-                  <div className="flex items-start mb-3">
-                    <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
-                    <p>Modelo de Visita Técnica</p>
-                  </div>
-                  <div className="flex items-start mb-3">
-                    <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
-                    <p>
-                      Modelo Proposta de Honorários para Perícia
-                      Médica
-                    </p>
-                  </div>
-                  <div className="flex items-start mb-3">
-                    <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
-                    <p>Modelos de Exames Físicos</p>
-                  </div>
-                </div>
-                <div>
-                  <div className="flex items-start mb-3">
-                    <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
-                    <p>
-                      Modelo Ficha Clínica para atendimentos em Saúde
-                      Mental
-                    </p>
-                  </div>
-                  <div className="flex items-start mb-3">
-                    <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
-                    <p>
-                      Modelo de Encaminhamento ao INSS para Médicos
-                    </p>
-                  </div>
-                  <div className="flex items-start mb-3">
-                    <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
-                    <p>Modelo de Descrição de Restrições Médicas</p>
-                  </div>
-                  <div className="flex items-start mb-3">
-                    <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
-                    <p>Modelos de laudos para perícias diversas</p>
-                  </div>
-                  <div className="flex items-start mb-3">
-                    <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
-                    <p>Fluxogramas de processos médicos</p>
-                  </div>
-                  <div className="flex items-start mb-3">
-                    <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
-                    <p>Orientações e Cartilhas de Saúde</p>
+                    <p>Empresas e instituições públicas</p>
                   </div>
                 </div>
               </div>
 
-              <h3 className="text-2xl font-serif text-[#394240] mb-6">
-                Por que vale a pena investir?
-              </h3>
               <p className="text-[#5C6857] mb-8">
-                O Painel não é apenas um conjunto de documentos, mas
-                uma ferramenta de otimização e inovação no seu
-                trabalho. Com ele, você terá à disposição uma
-                verdadeira "biblioteca" de materiais que são
-                constantemente atualizados e alinhados com as
-                necessidades da sua área.
+                Todo o conteúdo do Painel foi elaborado com base na
+                experiência da Dra. Marcella, médica com
+                especialização em Medicina do Trabalho pela
+                Universidade de São Paulo (USP), Titulada Especialista
+                pela Associação Nacional em Medicina do Trabalho
+                (ANAMT).
               </p>
 
               <h4 className="text-xl font-serif text-[#394240] mb-4">
-                Benefícios:
+                O que você encontrará no Painel:
               </h4>
               <div className="mb-8">
                 <div className="flex items-start mb-3">
                   <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
-                  <p>Documentos prontos para uso e personalização</p>
-                </div>
-                <div className="flex items-start mb-3">
-                  <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
                   <p>
-                    Material elaborado por especialistas em Medicina
-                    do Trabalho
+                    Modelos de laudos, pareceres, quesitos, minutas e
+                    muito mais;
                   </p>
                 </div>
                 <div className="flex items-start mb-3">
                   <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
-                  <p>Economia de tempo na criação de documentos</p>
-                </div>
-                <div className="flex items-start mb-3">
-                  <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
                   <p>
-                    Segurança técnica e jurídica em todas as
-                    atividades
+                    Estrutura organizada por categorias, com navegação
+                    intuitiva;
                   </p>
                 </div>
                 <div className="flex items-start mb-3">
                   <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
-                  <p>Atualizações conforme mudanças na legislação</p>
+                  <p>
+                    Atualizações contínuas, alinhadas à legislação
+                    vigente;
+                  </p>
+                </div>
+                <div className="flex items-start mb-3">
+                  <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
+                  <p>
+                    Conteúdo validado sob os aspectos técnico e
+                    jurídico;
+                  </p>
+                </div>
+                <div className="flex items-start mb-3">
+                  <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
+                  <p>
+                    Material pronto para uso, que economiza tempo e
+                    garante padronização;
+                  </p>
+                </div>
+                <div className="flex items-start mb-3">
+                  <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
+                  <p>
+                    Apoio para atuação em diferentes contextos
+                    profissionais
+                  </p>
                 </div>
               </div>
 
-              <h3 className="text-2xl font-serif text-[#394240] mb-6">
-                Segurança Técnica e Jurídica
-              </h3>
+              <h4 className="text-xl font-serif text-[#394240] mb-6">
+                Para quem é?
+              </h4>
+              <div className="mb-8">
+                <div className="flex items-start mb-3">
+                  <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
+                  <p>Médicos do Trabalho;</p>
+                </div>
+                <div className="flex items-start mb-3">
+                  <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
+                  <p>Médicos examinadores;</p>
+                </div>
+                <div className="flex items-start mb-3">
+                  <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
+                  <p>Peritos judiciais e assistentes técnicos;</p>
+                </div>
+                <div className="flex items-start mb-3">
+                  <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
+                  <p>Gestores de saúde ocupacional;</p>
+                </div>
+                <div className="flex items-start mb-3">
+                  <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
+                  <p>Profissionais da medicina legal;</p>
+                </div>
+                <div className="flex items-start mb-3">
+                  <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
+                  <p>
+                    Médicos que desejam estruturar melhor a
+                    documentação do consultório;
+                  </p>
+                </div>
+                <div className="flex items-start mb-3">
+                  <FaCheck className="text-[#5C6857] mt-1 mr-2 flex-shrink-0" />
+                  <p>
+                    Profissionais que atuam na saúde ocupacional
+                    prestando atendimento ao trabalhador - equipe
+                    multidisciplinar
+                  </p>
+                </div>
+              </div>
+              <h4 className="text-xl font-serif text-[#394240] mb-6">
+                Qual o objetivo?
+              </h4>
               <p className="text-[#5C6857] mb-8">
-                Todos os materiais incluídos no painel foram criados
-                levando em consideração as normativas da legislação
-                trabalhista e de saúde, bem como as melhores práticas
-                da área médica, garantindo segurança técnica e
-                jurídica em todas as suas atividades.
+                Oferecer mais <b>agilidade, segurança e confiança</b>{' '}
+                na elaboração de documentos técnicos, liberando o
+                profissional para focar naquilo que realmente importa:
+                o cuidado com as pessoas e a tomada de decisões com
+                base em evidências.
+              </p>
+              <h4 className="text-xl font-serif text-[#394240] mb-6">
+                Como acessar?
+              </h4>
+              <p className="text-[#5C6857] mb-8">
+                O Painel está disponível na plataforma <b>Hotmart</b>,
+                com acesso 100% online e imediato. Você pode acessar
+                os materiais sempre que precisar, de qualquer lugar,
+                com atualizações incluídas.
               </p>
             </div>
           </div>
@@ -230,10 +244,10 @@ const PanelContent = ({ className = '' }: PanelContentProps) => {
 
               <div className="text-center mb-6">
                 <span className="text-4xl font-bold text-[#394240]">
-                  R$ 297,00
+                  R$99,90
                 </span>
                 <p className="text-sm text-[#5C6857]">
-                  Pagamento único
+                  à vista ou em 4x de R$27,19
                 </p>
               </div>
 
@@ -260,10 +274,10 @@ const PanelContent = ({ className = '' }: PanelContentProps) => {
               </div>
 
               <Link
-                href="/contato"
-                className="btn-primary w-full flex items-center justify-center hover-zoom"
+                href="https://dramarcellaribeirovieira.hotmart.host/painel-inteligente-de-medicina-do-trabalho-e-pericias-medicas-4be0ee70-1f7b-4718-8cd7-b184bec0fc6e"
+                className="btn-primary flex items-center justify-center w-full hover-zoom px-6 py-3"
                 style={{
-                  animation: 'fadeInUp 1.2s ease-out 0.8s forwards',
+                  animation: 'fadeInUp 1.2s ease-out 1s forwards',
                   opacity: 0,
                 }}
               >
