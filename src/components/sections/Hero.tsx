@@ -113,7 +113,7 @@ const Hero = ({ page }: HeroProps) => {
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-8">
               <Link
-                href="/contato"
+                href="/servicos"
                 className="btn-cta-premium btn-shine inline-flex items-center hover:scale-105 transition-transform shadow-lg animate-subtle-pulse"
                 style={{
                   animation:
