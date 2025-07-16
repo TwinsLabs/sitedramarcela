@@ -64,7 +64,7 @@ export default function PaginasAdmin() {
         {
           id: 'sobre-title',
           title: 'Título da Página',
-          content: 'Sobre Dra. Marcella Vieira',
+          content: 'Dra. Marcella Ribeiro Vieira',
           section: 'header',
           page: 'sobre',
         },

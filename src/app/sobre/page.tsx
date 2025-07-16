@@ -18,7 +18,7 @@ export default function Sobre() {
   }
 
   const content = pageContent['sobre'] || {};
-  const title = content['title'] || 'Sobre Dra. Marcella Vieira';
+  const title = content['title'] || 'Dra. Marcella Ribeiro Vieira';
   const subtitle =
     content['subtitle'] ||
     'Médica do Trabalho e Perita Médica CRM 80479 | RQE 61114';

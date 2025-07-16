@@ -57,7 +57,7 @@ export const ContentProvider = ({
               'Conheça os serviços de excelência em Medicina do Trabalho e Perícias Médicas.',
           },
           sobre: {
-            title: 'Sobre Dra. Marcella Vieira',
+            title: 'Dra. Marcella Ribeiro Vieira',
             subtitle:
               'Médica do Trabalho e Perita Médica CRM 80479 | RQE 61114',
             'bio-title': 'Biografia',

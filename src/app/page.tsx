@@ -34,7 +34,7 @@ export default function Home() {
       <Hero page="home" />
 
       <BioSection
-        title="Sobre Dra. Marcella Vieira"
+        title="Dra. Marcella Ribeiro Vieira"
         content={bioContent.substring(0, 300) + '...'}
         imageSrc="/images/03.png"
         imageAlt="Dra. Marcella Vieira"
