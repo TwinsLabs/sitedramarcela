@@ -122,7 +122,7 @@ const Hero = ({ page }: HeroProps) => {
                   transform: 'translateY(20px)',
                 }}
               >
-                Solicitar Orçamento
+                Conheça meus serviços
                 <FaLongArrowAltRight className="ml-2" />
               </Link>
             </div>
