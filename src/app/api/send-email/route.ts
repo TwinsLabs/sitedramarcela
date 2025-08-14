@@ -4,13 +4,17 @@ import { Resend } from 'resend';
 /**
  * Email API endpoint using Resend
  * 
- * IMPORTANT FOR PRODUCTION:
+ * CONFIGURATION:
+ * - Set RESEND_API_KEY in environment variables
+ * - Set RESEND_TO_EMAIL in environment variables (recipient email)
+ * 
+ * FOR PRODUCTION WITH CUSTOM DOMAIN:
  * 1. Verify your domain at https://resend.com/domains
  * 2. Update the 'from' email to use your verified domain (e.g., 'contato@yourdomain.com')
- * 3. Update the 'to' email to 'dramarcellaribeirovieira@gmail.com' or your production email
+ * 3. Update RESEND_TO_EMAIL to 'dramarcellaribeirovieira@gmail.com'
  * 
  * Currently in test mode:
- * - Can only send to verified email addresses
+ * - Can only send to verified email addresses (set in RESEND_TO_EMAIL)
  * - Using 'onboarding@resend.dev' as the sender
  */
 export async function POST(req: NextRequest) {
@@ -48,11 +52,11 @@ export async function POST(req: NextRequest) {
 
     console.log('Attempting to send email with subject:', subject);
 
-    // For testing, use the verified email address
-    // In production, you'll need to verify your domain at resend.com/domains
-    const toEmail = process.env.NODE_ENV === 'development' 
-      ? 'elialberlopes@gmail.com'  // Use verified email in development
-      : 'dramarcellaribeirovieira@gmail.com';  // Production email
+    // Use environment variable for recipient email
+    // This allows easy configuration for both development and production
+    const toEmail = process.env.RESEND_TO_EMAIL || 'elialberlopes@gmail.com';
+    
+    console.log('Sending email to:', toEmail);
 
     const { data, error } = await resend.emails.send({
       from: 'Site Dra. Marcella <onboarding@resend.dev>',
