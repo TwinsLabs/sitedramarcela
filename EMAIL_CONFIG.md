@@ -1,23 +1,15 @@
 # Configuração de Email - Site Dra. Marcella
 
 ## Status Atual
-O sistema usa **Resend** para envio de emails. Atualmente em modo teste, enviando para emails verificados.
+O sistema usa **Resend** para envio de emails para `dramarcellaribeirovieira@gmail.com`.
 
-## ⚡ Configuração Rápida (Temporária)
-Enquanto o domínio não é verificado, mantenha na Vercel:
-```
-RESEND_API_KEY=re_7sbCGTBV_7tw3BxtJGVt3g5E26K13...
-RESEND_TO_EMAIL=elialberlopes@gmail.com
-```
-**Emails serão enviados para `elialberlopes@gmail.com` com o email do cliente no campo Reply-To.**
+## 🚀 Configuração Necessária
 
-## 🚀 Configuração Definitiva (Recomendada)
-Para enviar emails diretamente para `dramarcellaribeirovieira@gmail.com`:
-
-### 1. Verificar Domínio no Resend
+### 1. Verificar Domínio no Resend (OBRIGATÓRIO)
+Para que os emails funcionem, você DEVE verificar o domínio.
 Siga o guia completo em: **[RESEND_DOMAIN_SETUP.md](./RESEND_DOMAIN_SETUP.md)**
 
-### 2. Após Verificação, Configure na Vercel:
+### 2. Configure na Vercel:
 ```
 RESEND_API_KEY=re_7sbCGTBV_7tw3BxtJGVt3g5E26K13...
 RESEND_TO_EMAIL=dramarcellaribeirovieira@gmail.com
@@ -25,8 +17,9 @@ RESEND_FROM_EMAIL=contato@dramarcellavieira.com.br
 ```
 
 ## Como Funciona
-- **Sem domínio verificado**: Emails vão para o email em `RESEND_TO_EMAIL`
-- **Com domínio verificado**: Emails podem ir para qualquer endereço
+- Os emails do formulário de contato serão enviados para `dramarcellaribeirovieira@gmail.com`
+- O email do cliente aparece no campo "Reply-To" para facilitar a resposta
+- Requer verificação de domínio no Resend para funcionar
 
 ## Testando
 1. Local: `npm run dev` e acesse http://localhost:3000/contato

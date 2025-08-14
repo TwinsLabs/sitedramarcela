@@ -54,8 +54,8 @@ export async function POST(req: NextRequest) {
     console.log('Environment:', process.env.NODE_ENV);
 
     // Configuração de emails
-    // TO: Use a variável de ambiente (mude para dramarcellaribeirovieira@gmail.com após verificar domínio)
-    const toEmail = process.env.RESEND_TO_EMAIL || 'elialberlopes@gmail.com';
+    // TO: Email de destino configurável via variável de ambiente
+    const toEmail = process.env.RESEND_TO_EMAIL || 'dramarcellaribeirovieira@gmail.com';
     
     // FROM: Use domínio verificado ou fallback para onboarding
     const fromEmail = process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev';

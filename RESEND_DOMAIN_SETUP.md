@@ -95,5 +95,5 @@ RESEND_FROM_EMAIL=contato@dramarcellavieira.com.br
 - Documentação Resend: https://resend.com/docs
 - Suporte: support@resend.com
 
-## 📱 Alternativa Temporária
-Enquanto o domínio não é verificado, os emails continuarão sendo enviados para o email configurado em `RESEND_TO_EMAIL`.
+## ⚠️ Importante
+Sem a verificação do domínio, os emails não funcionarão corretamente. A verificação é obrigatória para enviar emails para `dramarcellaribeirovieira@gmail.com`.
