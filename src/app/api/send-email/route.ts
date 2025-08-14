@@ -53,13 +53,16 @@ export async function POST(req: NextRequest) {
     console.log('Attempting to send email with subject:', subject);
     console.log('Environment:', process.env.NODE_ENV);
 
-    // Use environment variable for recipient email
-    // IMPORTANT: In test mode, Resend can only send to verified emails
+    // Configuração de emails
+    // TO: Use a variável de ambiente (mude para dramarcellaribeirovieira@gmail.com após verificar domínio)
     const toEmail = process.env.RESEND_TO_EMAIL || 'elialberlopes@gmail.com';
+    
+    // FROM: Use domínio verificado ou fallback para onboarding
     const fromEmail = process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev';
+    const fromName = 'Site Dra. Marcella';
     
     console.log('Sending email to:', toEmail);
-    console.log('Sending from:', fromEmail);
+    console.log('Sending from:', `${fromName} <${fromEmail}>`);
 
     // Prepare email HTML with escaped content to prevent injection
     const escapedName = name.replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -69,7 +72,7 @@ export async function POST(req: NextRequest) {
     const escapedMessage = message.replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
     const { data, error } = await resend.emails.send({
-      from: `Site Dra. Marcella <${fromEmail}>`,
+      from: `${fromName} <${fromEmail}>`,
       to: toEmail,
       subject: `[Site Dra. Marcella] ${subject}`,
       html: `
