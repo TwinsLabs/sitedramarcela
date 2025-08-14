@@ -29,8 +29,8 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
     setMessage({ text: '', isError: false });
 
     try {
-      // Enviar dados para API
-      const response = await fetch('/api/send-email', {
+      // Tentar primeiro com Gmail, se falhar usa Resend
+      const response = await fetch('/api/send-email-gmail', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
